@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Mar Azul 🏖️ - Tu Paraíso Frente al Mar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav-bar">
+            <h1>Hotel Mar Azul</h1>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#habitaciones">Habitaciones</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#reservas" class="cta-link">Reservas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Tu Descanso Perfecto en la Costa</h2>
+                <p>El lugar ideal para relajarse y disfrutar de la brisa marina. ¡Bienvenido a tu oasis de paz!</p>
+                <a href="#reservas" class="btn-cta">¡Reserva Ahora y Escapa!</a>
+            </div>
+        </section>
+
+        <section id="habitaciones" class="section">
+            <h2 class="section-title">Nuestras Habitaciones: Lujo y Confort con Vista</h2>
+            
+            <div class="habitaciones-container">
+                
+                <article class="room-card">
+                    <img src="img/habitacion_estandar.jpg" alt="Habitación Estándar con vista">
+                    <h3>Estándar Vista Mar</h3>
+                    <p>Comodidad esencial con el sonido del mar. Perfecta para parejas o viajeros individuales.</p>
+                    <ul>
+                        <li><i class="fas fa-bed"></i> Cama Queen Size</li>
+                        <li><i class="fas fa-bath"></i> Baño Privado</li>
+                        <li><i class="fas fa-wifi"></i> WiFi Gratuito</li>
+                    </ul>
+                    <a href="#reservas" class="btn-card">Ver Detalles</a>
+                </article>
+
+                <article class="room-card">
+                    <img src="img/habitacion_superior.jpg" alt="Habitación Superior con balcón">
+                    <h3>Superior con Balcón</h3>
+                    <p>Disfruta de tu café matutino con una vista impresionante desde tu balcón privado.</p>
+                    <ul>
+                        <li><i class="fas fa-bed"></i> Cama King Size</li>
+                        <li><i class="fas fa-water"></i> Vista Frontal al Mar</li>
+                        <li><i class="fas fa-coffee"></i> Mini Bar</li>
+                    </ul>
+                    <a href="#reservas" class="btn-card">Ver Detalles</a>
+                </article>
+
+                <article class="room-card">
+                    <img src="img/habitacion_suite.jpg" alt="Suite Familiar">
+                    <h3>Suite Familiar</h3>
+                    <p>Espacio y privacidad para toda la familia. La comodidad que merecen tus vacaciones.</p>
+                    <ul>
+                        <li><i class="fas fa-users"></i> Capacidad para 4 personas</li>
+                        <li><i class="fas fa-couch"></i> Sala de Estar Separada</li>
+                        <li><i class="fas fa-tv"></i> 2 Smart TVs</li>
+                    </ul>
+                    <a href="#reservas" class="btn-card">Ver Detalles</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="servicios" class="section bg-light">
+            <h2 class="section-title">Experiencias y Comodidades a Tu Alcance</h2>
+            <div class="servicios-container">
+                <div class="servicio-item">
+                    <i class="fas fa-swimming-pool service-icon"></i>
+                    <h3>Piscina Infinity</h3>
+                    <p>Refrescante piscina exterior con solarium y vistas directas al océano.</p>
+                </div>
+                <div class="servicio-item">
+                    <i class="fas fa-utensils service-icon"></i>
+                    <h3>Restaurante Brisas</h3>
+                    <p>Degusta lo mejor de la cocina local e internacional con ingredientes frescos.</p>
+                </div>
+                <div class="servicio-item">
+                    <i class="fas fa-spa service-icon"></i>
+                    <h3>Spa y Relax</h3>
+                    <p>Servicios de masajes y tratamientos de belleza para una relajación total.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservas" class="section">
+            <h2 class="section-title">Tu Estancia Empieza Aquí</h2>
+            <p class="subtitle">Proceso de reserva rápido y seguro. ¡Solo unos clics para tu paraíso!</p>
+            
+            <form class="reserva-form">
+                <div class="form-group">
+                    <label for="checkin">Fecha de Entrada</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Fecha de Salida</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+                <div class="form-group">
+                    <label for="huespedes">Adultos</label>
+                    <input type="number" id="huespedes" name="huespedes" min="1" value="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="habitacion-tipo">Tipo de Habitación</label>
+                    <select id="habitacion-tipo" name="habitacion-tipo" required>
+                        <option value="estandar">Estándar Vista Mar</option>
+                        <option value="superior">Superior con Balcón</option>
+                        <option value="suite">Suite Familiar</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-cta">Buscar Disponibilidad</button>
+            </form>
+            <p class="note">Proceso seguro y confirmación instantánea. Te esperamos.</p>
+        </section>
+
+        <section id="contacto" class="section bg-light">
+            <h2 class="section-title">¿Preguntas? Estamos Listos para Ayudarte.</h2>
+            <div class="contacto-container">
+                
+                <div class="contacto-info">
+                    <h3>Información Directa</h3>
+                    <p><i class="fas fa-phone"></i> **Teléfono:** (+XX) 987-654-321</p>
+                    <p><i class="fas fa-envelope"></i> **Email:** info@hotelmarazul.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> **Dirección:** Av. Costa Azul S/N, [Ciudad Costera]</p>
+                    
+                    <div class="mapa-placeholder">
+                        [Mapa de ubicación aquí]
+                    </div>
+                </div>
+
+                <form class="contacto-form">
+                    <h3>Envíanos un Mensaje</h3>
+                    <input type="text" placeholder="Tu Nombre" required>
+                    <input type="email" placeholder="Tu Correo Electrónico" required>
+                    <textarea placeholder="Tu Mensaje o Consulta..." rows="5" required></textarea>
+                    <button type="submit" class="btn-cta">Enviar Consulta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hotel Mar Azul. Todos los derechos reservados.</p>
+        <p>Tono: Relajado y Profesional.</p>
+    </footer>
+</body>
+</html>
